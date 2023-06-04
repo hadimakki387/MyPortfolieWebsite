@@ -1,0 +1,13 @@
+.flex {
+    display: flex;
+  }
+  .white {
+    color: white;
+  }
+  .gap-1{
+    gap: 1rem;
+  }
+  .gap-2{
+    gap: 2rem;
+  }
+  
