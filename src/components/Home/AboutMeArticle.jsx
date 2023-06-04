@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 function Title() {
   return (
@@ -14,9 +15,9 @@ function Body1() {
   return (
     <p>
       Experienced and passionate frontend developer skilled in creating dynamic
-      and engaging websites. With a proven track record in successful projects
-      and an internship at XpertBot, I deliver effective solutions that
-      captivate users.
+      and engaging websites. With a proven track record in successful &nbsp;
+      <Link to="/projects" className="intermediateLinks">projects</Link>&nbsp; and an internship at XpertBot, I deliver
+      effective solutions that captivate users.
     </p>
   );
 }

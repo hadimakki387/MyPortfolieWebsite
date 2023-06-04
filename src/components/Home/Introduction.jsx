@@ -13,14 +13,14 @@ function Introduction() {
   const handleMouseLeave = () => {
     setUnderline("");
   };
-  const [isVisible, setVisible] = useState(false);
+ 
   return (
     <div class="GlicthContainer HomeBody ">
       <Fade top distance="10%">
         <AboutMeArticle />
       </Fade>
 
-      <Fade bottom distance="10%" delay={600}>
+      <Fade bottom distance="15%" delay={600}>
         <Link to="/about" className="arrowDiv">
           <p
             className={`flex  ${underline} `}

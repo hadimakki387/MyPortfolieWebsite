@@ -13,6 +13,7 @@ body {
     radial-gradient(at 79% 53%, rgba(128, 0, 128, 0.09) 0px, transparent 50%);
 
   font-family: "Roboto", sans-serif;
+  height: 96vh;
 }
 
 .outerDiv {
@@ -38,13 +39,13 @@ body {
   display: table-cell;
   position: relative;
   padding: 15px 0;
+  
 }
 .Links {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
   display: inline-block;
   padding-bottom: 15px;
   position: relative;
@@ -64,14 +65,16 @@ body {
 .Links:hover:after {
   width: 100%;
   left: 0;
+  
 }
 .HomeBody {
   width: 85%;
   margin: auto;
-  height: 72.9vh;
   color: rgb(214, 214, 214);
   line-height: 2.5;
-  margin-top: 11%;
+  position: relative;
+  top: 11%;
+  
 }
 
 .GlitchContainer {
@@ -160,4 +163,10 @@ body {
 .socialMediaLinks {
   text-decoration: none;
   color: white;
+}
+
+.intermediateLinks{
+  text-decoration: none;
+  color: white;
+  font-weight:bolder ;
 }
