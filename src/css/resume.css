@@ -1,0 +1,22 @@
+.ContactLink{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+.ResumeBody{
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.ResumeText{
+    margin-bottom: 3rem;
+}
+.resumeImgDiv{
+    width: 100%;
+}
+
+.resumeImg{
+    display: flex;
+    margin: auto;
+}

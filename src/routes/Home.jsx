@@ -6,7 +6,7 @@ import Cursor from "../components/Cursor";
 
 function Home() {
   return (
-    <div className="gradient">
+    <div className="gradient HomeBody">
     <Cursor/>
       <Fade top distance="10%">
         <NavBar />

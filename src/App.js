@@ -1,12 +1,13 @@
 import "./css/Home.css";
 import "./css/About.css";
 import "./css/projects.css";
+import "./css/resume.css";
 import "./css/shortcuts.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Projects from "./routes/projects";
-
+import Resume from "./routes/Resume";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
     </div>
