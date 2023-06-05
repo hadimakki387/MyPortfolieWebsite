@@ -12,16 +12,20 @@ body {
     radial-gradient(at 33% 50%, rgba(255, 69, 0, 0.09) 0px, transparent 50%),
     radial-gradient(at 79% 53%, rgba(128, 0, 128, 0.09) 0px, transparent 50%);
 
+  height: 100vh;
+ 
   font-family: "Roboto", sans-serif;
-  height: 96vh;
 }
+
+
 
 .outerDiv {
   width: 58%;
   margin: auto;
   color: white;
   display: grid;
-  margin-top: 2.2rem;
+  position: relative;
+  top: 2.2rem;
 }
 
 .NavBar {

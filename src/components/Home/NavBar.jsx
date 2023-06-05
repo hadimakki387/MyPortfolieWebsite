@@ -1,39 +1,32 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-
 function NavBar() {
   return (
     <div className="NavBar">
       <div>
-        <Link to="/">
-          <i class="fa-solid fa-house-chimney fa-2x white"></i>
+        <Link to={"/"}>
+          <i className="fa-solid fa-house-chimney fa-2x white"></i>
         </Link>
       </div>
 
       <div>
         <ul className="flex LinksList">
-          <Link to={"about"}  >
-            <li className="LinksListItems ">
-              <a className="Links decorationNone" href="#" >
-                ABOUT
-              </a>
-            </li>
-          </Link>
-          <Link to={"projets"}>
-            <li className="LinksListItems">
-              <a className="Links" href="#">
-                PROJECTS
-              </a>
-            </li>
-          </Link>
-          <Link to={"contact"}>
-            <li className="LinksListItems">
-              <a className="Links" href="#">
-                CONTACT
-              </a>
-            </li>
-          </Link>
+          <li className="LinksListItems">
+            <Link to={"/about"} className="Links decorationNone">
+              ABOUT
+            </Link>
+          </li>
+          <li className="LinksListItems">
+            <Link to={"/projects"} className="Links">
+              PROJECTS
+            </Link>
+          </li>
+          <li className="LinksListItems">
+            <Link to={"/contact"} className="Links">
+              CONTACT
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
