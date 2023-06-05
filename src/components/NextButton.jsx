@@ -13,7 +13,7 @@ function NextButton(props) {
   return (
     <Link to={props.URI} className="arrowDiv">
           <p
-            className={`flex  ${underline} `}
+            className={`flex  ${underline} mt-3`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
