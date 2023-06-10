@@ -23,7 +23,7 @@ function NavBar() {
             </Link>
           </li>
           <li className="LinksListItems">
-            <Link to={"/contact"} className="Links">
+            <Link to={"/contactMe"} className="Links">
               CONTACT
             </Link>
           </li>

@@ -80,19 +80,18 @@ html:not(html:hover) .cursor::after {
   transform: scale(0);
 }
 
-.Projects{
-    width: 85%;
-    margin: auto;
+.Projects {
+  width: 85%;
+  margin: auto;
 }
 
-.ProjectCard{
-    width: 100%;
-    border-radius: 10px;
+.ProjectCard {
+  width: 100%;
+  border-radius: 10px;
 }
-
 
 .projectFigure {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -102,7 +101,6 @@ html:not(html:hover) .cursor::after {
   text-align: left;
   font-size: 16px;
   background: #000;
-  
 }
 
 .projectFigure *,
@@ -125,7 +123,7 @@ html:not(html:hover) .cursor::after {
   position: absolute;
   top: 20px;
   right: 20px;
-  content: '';
+  content: "";
   background-color: #fff;
   z-index: 1;
   opacity: 0;
@@ -157,7 +155,7 @@ html:not(html:hover) .cursor::after {
 }
 
 .projectFigure h4 {
-  font-size: .8em;
+  font-size: 0.8em;
   text-transform: uppercase;
 }
 
@@ -216,12 +214,21 @@ html:not(html:hover) .cursor::after {
   transition-delay: 0.35s;
 }
 
-.Technologies{
-    background-color: gray;
-    padding: 2px 6px;
-    border-radius: 50px;
+.Technologies {
+  background-color: gray;
+  padding: 2px 6px;
+  border-radius: 50px;
 }
-.TechnologiesDiv{
-    display: flex;
-    gap: 0.5rem;
+.TechnologiesDiv {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ProjectInfo {
+  position:fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 30%;
+  background-color: #000;
 }

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import NavBar from "../components/Home/NavBar";
 import { Link } from "react-router-dom";
 import Cursor from "../components/Cursor";
@@ -36,7 +35,7 @@ function Resume() {
           </div>
         </Fade>
         <Fade top distance="10%" delay={600}>
-          <NextButton Content="Are you convinced to contact me now ?" URI="/contact Me"/>
+          <NextButton Content="Are you convinced to contact me now ?" URI="/ContactMe"/>
         </Fade>
         
       </div>
