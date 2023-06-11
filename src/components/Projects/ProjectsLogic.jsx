@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import ProjectInfo from "./ProjectInfo";
+import React from "react";
 import { Fade } from "react-reveal";
 
 function ProjectsLogic({ onProjectSelect }) {
@@ -54,8 +53,8 @@ function ProjectsLogic({ onProjectSelect }) {
             <figure className="projectFigure">
               <img src={project.img} alt="sample99" className="ProjectImg" />
               <figcaption>
-                <h3>{project.name}</h3>
-                <h4>{project.excerpt}</h4>
+                <h3 className="ProjectTitle">{project.name}</h3>
+                <h4 className="ProjectExcerpt">{project.excerpt}</h4>
                 <br />
                 <div className="TechnologiesDiv">
                   {project.technologies.map((technology, index) => (

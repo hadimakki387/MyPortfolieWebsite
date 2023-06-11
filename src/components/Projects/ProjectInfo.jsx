@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ClickAwayListener from "react-click-away-listener";
 
 function ProjectInfo(props) {
@@ -11,7 +11,7 @@ function ProjectInfo(props) {
   return (
     <ClickAwayListener onClickAway={handleButtonClick}>
       <div
-        className="pos__relative snipcss-9ePpH"
+        className="pos__relative snipcss-9ePpH ProjectInfoDiv"
         onClick={props.handleClickAway}
       >
         <div className="d-flex justify-content-between header">
@@ -40,21 +40,18 @@ function ProjectInfo(props) {
               ></path>
             </svg>
           </button>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ProjectName"
-          >
-            {name}
-          </a>
+          <span className="ProjectName">{name}</span>
         </div>
         <div class="main__post">
-          <h3 class="mt-4"></h3>
           <p class="te mb-4">{excerpt}</p>
-          <img src={img} alt="Piggment" width={"100%"} />
+          <img
+            src={img}
+            alt="Piggment"
+            width={"100%"}
+            className="ProjectInfoImg"
+          />
           <h4>About</h4>
-          <p>{description}</p>
+          <p className="ProjectInfoDescription">{description}</p>
           <h4>Technologies</h4>
           <p class="d-flex flex-wrap">
             {technologies.map((technology, index) => {
@@ -77,13 +74,18 @@ function ProjectInfo(props) {
             </svg>
             Github
           </h4>
-          <p>
-            <a href="codeWonders.com" target="_blank" rel="noopener noreferrer">
+          <p className="ProjectInfoLink">
+            <a
+              href="codeWonders.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
               {Link}
             </a>
           </p>
         </div>
-        <a
+        {/* <a
           class="open__project"
           target="_blank"
           id="cardHover"
@@ -98,7 +100,7 @@ function ProjectInfo(props) {
           >
             <path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path>
           </svg>
-        </a>
+        </a> */}
       </div>
     </ClickAwayListener>
   );

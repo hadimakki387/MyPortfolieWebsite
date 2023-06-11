@@ -1,7 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import HamburgerMenu from "../HamburgerMenu";
 
 function NavBar() {
+
+  function ShowMenu() {
+    
+  }
   return (
     <div className="NavBar">
       <div>
@@ -10,7 +15,7 @@ function NavBar() {
         </Link>
       </div>
 
-      <div>
+      <div className="NavBarList">
         <ul className="flex LinksList">
           <li className="LinksListItems">
             <Link to={"/about"} className="Links decorationNone">
@@ -28,6 +33,9 @@ function NavBar() {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="HamburgerMenu " onClick={ShowMenu}>
+        <HamburgerMenu />
       </div>
     </div>
   );

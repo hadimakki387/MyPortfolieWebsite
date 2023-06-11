@@ -43,7 +43,7 @@ function AboutLi() {
       <a href="/" class="float-right" tabindex="-1">
         <b>{item.date}</b>
       </a>
-      <p className="">
+      <p className="AboutBody">
         {item.body}
       </p>
     </li>

@@ -4,11 +4,12 @@ import { Fade } from "react-reveal";
 import AboutLi from "../components/About/AboutLi";
 import Cursor from "../components/Cursor";
 import NextButton from "../components/NextButton";
+import SocialMediaLinks from "../components/Home/SocialMediaLinks";
 
 function About() {
   return (
     <div className="gradient AboutBody">
-    <Cursor/>
+      <Cursor />
       <Fade top distance={"10%"} delay={200}>
         <NavBar />
       </Fade>
@@ -20,7 +21,15 @@ function About() {
             <AboutLi />
           </ul>
         </article>
-        <NextButton URI="/projects" Content="Lets Continue To Projects"/>
+        <Fade bottom distance="10%" delay={700}>
+          <div>
+            <NextButton URI="/projects" Content="Lets Continue To Projects" />
+            <div className="WindowsSocialMediaDiv">
+              <SocialMediaLinks />
+            </div>
+            
+          </div>
+        </Fade>
       </Fade>
     </div>
   );

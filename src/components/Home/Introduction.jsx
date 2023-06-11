@@ -13,11 +13,7 @@ function Introduction() {
         <AboutMeArticle />
       </Fade>
 
-      <Fade bottom distance="15%" delay={600}>
-        <NextButton URI="/about" Content="See More About Me"/>
-
-        <SocialMediaLinks />
-      </Fade>
+      
     </div>
   );
 }

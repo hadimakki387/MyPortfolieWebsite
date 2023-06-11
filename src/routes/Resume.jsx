@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Cursor from "../components/Cursor";
 import { Fade } from "react-reveal";
 import NextButton from "../components/NextButton";
+import SocialMediaLinks from "../components/Home/SocialMediaLinks";
 
 function Resume() {
   return (
@@ -34,10 +35,19 @@ function Resume() {
             <img src="Cv.png" alt="Cv" className="resumeImg"></img>
           </div>
         </Fade>
-        <Fade top distance="10%" delay={600}>
-          <NextButton Content="Are you convinced to contact me now ?" URI="/ContactMe"/>
+
+        <Fade bottom distance="10%" delay={1000}>
+          <div>
+            <NextButton
+              Content="Are you convinced to contact me now ?"
+              URI="/ContactMe"
+            />
+            <div className="WindowsSocialMediaDiv">
+              <SocialMediaLinks />
+            </div>
+            
+          </div>
         </Fade>
-        
       </div>
     </div>
   );

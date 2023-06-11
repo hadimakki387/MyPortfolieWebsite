@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialMediaLinks() {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 SocialMediaLinksDiv">
       <a
         className="socialMediaLinks"
         href="https://github.com/hadimakki387"

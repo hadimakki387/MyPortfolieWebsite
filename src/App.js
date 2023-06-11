@@ -4,12 +4,14 @@ import "./css/projects.css";
 import "./css/resume.css";
 import "./css/shortcuts.css";
 import "./css/ContactMe.css";
+import "./css/ProjectInfo.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Projects from "./routes/projects";
 import Resume from "./routes/Resume";
 import ContactMe from "./routes/ContactMe";
+import SocialMediaLinks from "./components/Home/SocialMediaLinks";
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
           <Route path="/ContactMe" element={<ContactMe />} />
         </Routes>
       </Router>
+      <div className="MobileSocialMedia">
+        <SocialMediaLinks />
+      </div>
+      
     </div>
   );
 }

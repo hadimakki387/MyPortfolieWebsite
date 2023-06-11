@@ -13,27 +13,6 @@ html {
   transition: 600ms transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
 .cursor {
   display: none;
   position: fixed;
@@ -83,6 +62,7 @@ html:not(html:hover) .cursor::after {
 .Projects {
   width: 85%;
   margin: auto;
+  margin-top: 5rem;
 }
 
 .ProjectCard {
@@ -225,10 +205,77 @@ html:not(html:hover) .cursor::after {
 }
 
 .ProjectInfo {
-  position:fixed;
+  position: fixed;
   height: 100vh;
   top: 0;
   right: 0;
   width: 30%;
   background-color: #000;
+  font-size: 1rem;
+}
+.ProjectInfoDiv {
+  width: 100%;
+}
+
+@media only screen and (max-width: 470px) {
+  .Projects {
+    width: 100%;
+    margin: 3rem auto;
+  }
+  .AboutTitle {
+    margin-bottom: 1rem;
+  }
+  .ProjectImg {
+    width: 100%;
+  }
+  .projectFigure {
+    margin: 0.25rem auto;
+  }
+
+  .projectFigure h3,
+  .projectFigure h4 {
+    margin: 0;
+    font-size: 10px;
+    font-weight: normal;
+    opacity: 0;
+  }
+
+  .Technologies {
+    background-color: gray;
+    padding: 2px 6px;
+    border-radius: 50px;
+  }
+  .TechnologiesDiv {
+    display: flex;
+    gap: 2px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .ProjectInfo {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .ProjectInfo {
+    width: 50%;
+  }
+  .ProjectInfo {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ProjectInfo {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .ProjectInfo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ProjectInfo {
+    font-size: 0.7rem;
+  }
 }

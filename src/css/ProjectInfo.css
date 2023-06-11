@@ -146,13 +146,7 @@
       --sidebar-cta: #3f566e; 
   } 
   
-  @media (min-width: 787px){ 
-    :root { 
-      --font-sm: 0.875em; 
-      --font-md: 1.124em; 
-      --font-x-md: 1.667em; 
-    } 
-  }     
+    
   
   .pos__relative  { 
       position: relative; 
@@ -377,5 +371,4 @@
       color: var(--sidebar-cta);
   } 
   
-  
-  
+ 

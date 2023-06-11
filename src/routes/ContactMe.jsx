@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Cursor from "../components/Cursor";
 import NavBar from "../components/Home/NavBar";
 import { Fade } from "react-reveal";
+import NextButton from "../components/NextButton";
+import SocialMediaLinks from "../components/Home/SocialMediaLinks";
 
 function ContactMe() {
   const [name, setName] = useState("");
@@ -58,17 +60,19 @@ function ContactMe() {
         class="dnXmp style-tQsbA"
         id="style-tQsbA"
       ></grammarly-extension>
-      <Fade top distance="10%" delay={400}>
-        <h1 class="AboutTitle">Contact.</h1>
-      </Fade>
-      <Fade top distance="10%" delay={600}>
-        <article>
-          <p>
-            shoot me an email directly on
-            <b className="MyEmail"> hmakki387@gmail.com</b>
-          </p>
-        </article>
-      </Fade>
+      <div className="ContactDiv">
+        <Fade top distance="10%" delay={400}>
+          <h1 class="AboutTitle">Contact.</h1>
+        </Fade>
+        <Fade top distance="10%" delay={600}>
+          <article>
+            <p>
+              shoot me an email directly on
+              <b className="MyEmail"> hmakki387@gmail.com</b>
+            </p>
+          </article>
+        </Fade>
+      </div>
 
       <br />
 
@@ -118,9 +122,18 @@ function ContactMe() {
           </div>
         </Fade>
         <Fade bottom distance="10%" delay={1000}>
-          <Button/>
+          <Button />
         </Fade>
       </form>
+      <Fade bottom distance="10%" delay={1200}>
+        <div>
+          <NextButton Content="Go Back Home" URI="/" />
+          <div className="WindowsSocialMediaDiv">
+            <SocialMediaLinks />
+          </div>
+          
+        </div>
+      </Fade>
     </div>
   );
 }

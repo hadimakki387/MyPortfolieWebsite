@@ -1,5 +1,5 @@
 body {
-  background: rgb(7, 7, 7);
+  background: rgb(12, 14, 24);
   background-image: radial-gradient(
       at 40% 40%,
       rgba(30, 144, 255, 0.09) 0px,
@@ -73,7 +73,8 @@ body {
   margin: auto;
   color: rgb(214, 214, 214);
   line-height: 2.5;
-  height: 80vh;
+  margin-top: 7.5rem;
+  height: 60.4vh;
   
 }
 
@@ -166,8 +167,53 @@ body {
   color: white;
 }
 
+.MobileSocialMedia{
+  display: none;
+}
+
+
+
 .intermediateLinks{
   text-decoration: none;
   color: white;
   font-weight:bolder ;
 }
+.HamburgerMenu{
+  display: none;
+}
+
+@media only screen and (max-width: 980px){
+  .outerDiv{
+    width: 90%;
+  }
+  .HomeBody{
+    width: 100%;
+    height: 70%;
+  }
+  
+}
+@media only screen and (max-width: 600px){
+  .HamburgerMenu{
+    display: inherit;
+  }
+  .NavBarList{
+    display: none;
+  }
+  .MobileSocialMedia{
+    display: inherit;
+  }
+  .SocialMediaLinksDiv{
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(13, 13, 27, 0.39);
+    backdrop-filter: blur(10px);
+    padding: 1rem ;
+  }
+  .WindowsSocialMediaDiv{
+    display: none;
+  }
+}
+
