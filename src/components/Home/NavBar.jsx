@@ -1,12 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import HamburgerMenu from "../HamburgerMenu";
 
-function NavBar() {
+function NavBar(props) {
+  const location = useLocation().pathname;
 
-  function ShowMenu() {
-    
-  }
   return (
     <div className="NavBar">
       <div>
@@ -18,7 +16,10 @@ function NavBar() {
       <div className="NavBarList">
         <ul className="flex LinksList">
           <li className="LinksListItems">
-            <Link to={"/about"} className="Links decorationNone">
+            <Link
+              to={"/about"}
+              className="Links"
+            >
               ABOUT
             </Link>
           </li>
@@ -34,11 +35,12 @@ function NavBar() {
           </li>
         </ul>
       </div>
-      <div className="HamburgerMenu " onClick={ShowMenu}>
+      <div className="HamburgerMenu " onClick={props.toggleSideBar}>
         <HamburgerMenu />
       </div>
     </div>
   );
 }
+
 
 export default NavBar;
