@@ -38,7 +38,7 @@ function ContactMe() {
   };
   function Button() {
     return (
-      <button class="btn btn-default" type="submit" aria-label="Send Message">
+      <button className="btn btn-default" type="submit" aria-label="Send Message">
         Send Message
       </button>
     );
@@ -50,7 +50,7 @@ function ContactMe() {
   }
 
   return (
-    <div class="snipcss-RDU5U">
+    <div className="snipcss-RDU5U">
     <SideBar sideBar={sideBar} toggleSideBar={toggleSideBar} />
       <Cursor />
       <Fade top distance="10%" delay={200}>
@@ -69,7 +69,7 @@ function ContactMe() {
       ></grammarly-extension>
       <div className="ContactDiv">
         <Fade top distance="10%" delay={400}>
-          <h1 class="AboutTitle">Contact.</h1>
+          <h1 className="AboutTitle">Contact.</h1>
         </Fade>
         <Fade top distance="10%" delay={600}>
           <article>
@@ -85,13 +85,13 @@ function ContactMe() {
 
       <form onSubmit={handleSubmit}>
         <Fade top distance="10%" delay={800}>
-          <div class="fields">
-            <div class="field half">
+          <div className="fields">
+            <div className="field half">
               <input
                 type="text"
                 name="name"
                 id="name"
-                class="form-control NameArea TransparentInput"
+                className="form-control NameArea TransparentInput"
                 placeholder="Name"
                 aria-required="true"
                 required=""
@@ -99,12 +99,12 @@ function ContactMe() {
                 onChange={handleNameChange}
               />
             </div>
-            <div class="field half">
+            <div className="field half">
               <input
                 type="email"
                 name="email"
                 id="email"
-                class="form-control TransparentInput"
+                className="form-control TransparentInput"
                 placeholder="Email"
                 aria-required="true"
                 required=""
@@ -112,12 +112,12 @@ function ContactMe() {
                 onChange={handleEmailChange}
               />
             </div>
-            <div class="field">
+            <div className="field">
               <textarea
                 name="message"
                 id="message"
                 rows="5"
-                class="form-control TextArea"
+                className="form-control TextArea"
                 placeholder="Message"
                 aria-required="true"
                 required=""

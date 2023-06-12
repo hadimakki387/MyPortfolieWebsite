@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Title() {
   return (
-    <p class="glitch">
+    <p className="glitch">
       <span aria-hidden="true">I'M HADI MAKKi</span>
       I'M HADI MAKKi
       <span aria-hidden="true">I'M HADI MAKKi</span>

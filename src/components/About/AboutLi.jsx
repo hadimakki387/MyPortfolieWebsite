@@ -5,8 +5,8 @@ import React from "react";
 function AboutLi() {
   const Li = [
     {
-      title: "The Complete 2023 Web Development Bootcamp.",
-      body: "Sure. The Complete 2023 Web Development Bootcamp is an online course that teaches you how to build websites and web applications using HTML, CSS, and JavaScript. The course is taught by Angela Yu, a popular instructor on Udemy.",
+      title: "The Complete 2022 Web Development Bootcamp.",
+      body: "Sure. The Complete 2022 Web Development Bootcamp is an online course that teaches you how to build websites and web applications using HTML, CSS, and JavaScript. The course is taught by Angela Yu, a popular instructor on Udemy.",
       date: 2022,
       source: "Udemy",
       link:"https://www.udemy.com/course/the-complete-web-development-bootcamp/"
@@ -29,7 +29,8 @@ function AboutLi() {
   return Li.map((item, index) => (
    
       <li id={index} className="AboutLi">
-      <a
+      <div className="TitleAndEndDate">
+        <a
         target="_blank"
         rel="noopener noreferrer"
         id="cardHover"
@@ -40,9 +41,11 @@ function AboutLi() {
         {item.title}
         <small>{item.source}</small>
       </a>
-      <a href="/" class="float-right" tabindex="-1">
+      <a href="/"  tabindex="-1">
         <b>{item.date}</b>
       </a>
+      </div>
+      
       <p className="AboutBody">
         {item.body}
       </p>

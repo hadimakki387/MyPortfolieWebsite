@@ -25,7 +25,7 @@ function About() {
         <h1 className="AboutTitle">About Me.</h1>
         <article className="AboutArticle">
           <h4 className="">My Reads.</h4>
-          <ul class="timeline AboutUl">
+          <ul className="timeline AboutUl">
             <AboutLi />
           </ul>
           <Fade bottom distance="10%" delay={700}>

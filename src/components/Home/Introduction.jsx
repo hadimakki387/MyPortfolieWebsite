@@ -8,7 +8,7 @@ function Introduction() {
   
  
   return (
-    <div class="GlicthContainer HomeBody ">
+    <div className="GlicthContainer HomeBody ">
       <Fade top distance="10%">
         <AboutMeArticle />
       </Fade>

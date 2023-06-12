@@ -71,6 +71,7 @@
   font-family: Blorado, sans-serif;
   text-rendering: geometricprecision;
   cursor: pointer;
+  display: inline-block;
 }
 
 .AboutUl.timeline li a {
@@ -123,3 +124,13 @@ b {
   font-weight: bold;
 }
 
+.TitleAndEndDate{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width:680px){
+  .TitleAndEndDate{
+    display: grid;
+  }
+}

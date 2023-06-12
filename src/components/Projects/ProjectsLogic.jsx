@@ -49,7 +49,7 @@ function ProjectsLogic({ onProjectSelect }) {
   return (
     <div>
       {Projects.map((project, index) => (
-        <Fade top distance={"8%"} delay={400}>
+        <Fade top distance={"8%"} delay={400} key={index}>
           <div onClick={() => handleProjectClick(project)} key={index}>
             <figure className="projectFigure">
               <img src={project.img} alt="sample99" className="ProjectImg" />

@@ -1,0 +1,4 @@
+{
+    "presets": [],
+    "plugins": ["react-optimized-image/plugin"]
+  }

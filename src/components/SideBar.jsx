@@ -17,7 +17,7 @@ function SideBar(props) {
                   about
                 </Link>
                 <button className="XButton" onClick={props.toggleSideBar}>
-                  X
+                <i class="fa-light fa-x"></i>
                 </button>
               </div>
             </Fade>
