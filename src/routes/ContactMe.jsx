@@ -4,6 +4,7 @@ import NavBar from "../components/Home/NavBar";
 import { Fade } from "react-reveal";
 import NextButton from "../components/NextButton";
 import SocialMediaLinks from "../components/Home/SocialMediaLinks";
+import SideBar from "../components/SideBar";
 
 function ContactMe() {
   const [name, setName] = useState("");
@@ -42,12 +43,18 @@ function ContactMe() {
       </button>
     );
   }
+  const [sideBar, setSideBar] = useState(false);
+
+  function toggleSideBar() {
+    setSideBar(!sideBar);
+  }
 
   return (
-    <div class="col-md-10 snipcss-RDU5U">
+    <div class="snipcss-RDU5U">
+    <SideBar sideBar={sideBar} toggleSideBar={toggleSideBar} />
       <Cursor />
       <Fade top distance="10%" delay={200}>
-        <NavBar />
+        <NavBar toggleSideBar={toggleSideBar}/>
       </Fade>
 
       <grammarly-extension

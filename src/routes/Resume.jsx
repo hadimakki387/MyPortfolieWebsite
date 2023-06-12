@@ -15,7 +15,7 @@ function Resume() {
 
       <div className="ResumeBody">
         <Fade top distance="10%" delay={400}>
-          <h1 className="AboutTitle">Resume.</h1>
+          <h1 className="ResumeTitle">Resume.</h1>
         </Fade>
         <Fade top distance="10%" delay={600}>
           <p className="ResumeText">
@@ -32,7 +32,7 @@ function Resume() {
         </Fade>
         <Fade top distance="8%" delay={800}>
           <div className="resumeImgDiv">
-            <img src="Cv.png" alt="Cv" className="resumeImg"></img>
+            <img src="Cv.png" alt="Cv" className="resumeImg" />
           </div>
         </Fade>
 
@@ -45,7 +45,6 @@ function Resume() {
             <div className="WindowsSocialMediaDiv">
               <SocialMediaLinks />
             </div>
-            
           </div>
         </Fade>
       </div>

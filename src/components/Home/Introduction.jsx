@@ -12,7 +12,12 @@ function Introduction() {
       <Fade top distance="10%">
         <AboutMeArticle />
       </Fade>
-
+      <Fade bottom distance="15%" delay={600}>
+        <NextButton URI="/about" Content="See More About Me"/>
+        <div className="WindowsSocialMediaDiv">
+          <SocialMediaLinks/>
+        </div>
+      </Fade>
       
     </div>
   );

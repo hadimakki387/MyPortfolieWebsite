@@ -1,6 +1,7 @@
 import React from "react";
 import ClickAwayListener from "react-click-away-listener";
 
+
 function ProjectInfo(props) {
   const { name, excerpt, description, technologies, img, Link } = props.project;
 

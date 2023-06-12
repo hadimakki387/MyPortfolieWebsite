@@ -11,6 +11,7 @@
 
 .ResumeText{
     margin-bottom: 3rem;
+    
 }
 .resumeImgDiv{
     width: 100%;
@@ -20,4 +21,10 @@
     display: flex;
     margin: auto;
     width: 100%;
+}
+
+.ResumeTitle{
+    font-size: 45px;
+  font-weight: bold;
+  margin-top: 2rem;
 }
