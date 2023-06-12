@@ -36,12 +36,15 @@ function Projects() {
       <SideBar sideBar={sideBar} toggleSideBar={toggleSideBar} />
       <div className={selectedProject ? "opacity-20" : ""}>
         <Cursor />
-        <Fade top distance={"10%"} delay={200}>
+        <Fade top distance={"10%"} >
           <NavBar toggleSideBar={toggleSideBar} />
         </Fade>
 
         <div className="Projects">
-          <h1 className="AboutTitle">Projects.</h1>
+        <Fade top distance="10%" delay={200}>
+          <h1 className="ProjectTitle">Projects.</h1>
+        </Fade>
+          
           <ProjectsLogic onProjectSelect={handleProjectSelect} />
           <Fade bottom distance="10%" delay={600}>
             <div>

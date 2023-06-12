@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import Img from 'react-optimized-image';
 
 function ProjectsLogic({ onProjectSelect }) {
   const Projects = [

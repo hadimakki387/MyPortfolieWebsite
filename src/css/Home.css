@@ -219,6 +219,9 @@ body {
     width: 100%;
     height: 70%;
   }
+  .outerDiv{
+    margin-bottom: 3rem;
+  }
   
 }
 @media only screen and (max-width: 600px){

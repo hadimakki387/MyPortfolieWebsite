@@ -216,14 +216,16 @@ html:not(html:hover) .cursor::after {
 .ProjectInfoDiv {
   width: 100%;
 }
+.ProjectTitle{
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
 
 @media only screen and (max-width: 470px) {
   .Projects {
     width: 100%;
     margin: 3rem auto;
-  }
-  .AboutTitle {
-    margin-bottom: 1rem;
   }
   .ProjectImg {
     width: 100%;
